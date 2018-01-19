@@ -48,11 +48,9 @@ final public class CollectionImageCell: CollectionCell {
                     image = UIImage(from: data, withMaxSize: CollectionImageCell.maxCellSize * UIScreen.main.scale)
                 }
                 
-                guard let finalImage = image else {
-                    fatal("Invalid image data cannot be loaded: \(message)")
-                }
+                //requireInternal(finalImage != nil, "Invalid image data cannot be loaded: \(message)")
                 
-                return finalImage
+                return image ?? UIImage()
                 
             }, completion: completion)
         }

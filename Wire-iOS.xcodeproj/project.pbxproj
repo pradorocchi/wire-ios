@@ -1059,6 +1059,48 @@
 			remoteGlobalIDString = 1EE85C4F1B5F96FB008E084B;
 			remoteInfo = ZetaFramework;
 		};
+		7C666BE02010FFC800CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E88BCA71B1F35DF00232589;
+			remoteInfo = "WireTransport-ios";
+		};
+		7C666BE22010FFC800CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E88BCB21B1F35DF00232589;
+			remoteInfo = "WireTransport-ios-tests";
+		};
+		7C666BE42010FFC800CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09A218661B790D330076547A;
+			remoteInfo = "WireTransport-tests-host";
+		};
+		7C666BEC2011072000CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A4FC1CAD5DF10039E10C;
+			remoteInfo = WireDataModel;
+		};
+		7C666BEE2011072000CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A5061CAD5DF10039E10C;
+			remoteInfo = WireDataModelTests;
+		};
+		7C666BF02011072000CD2D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A7F31CAED9510039E10C;
+			remoteInfo = WireDataModelTestHost;
+		};
 		87B7DAB31E696F5D005F5140 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F42C530199244A700288E4D /* Project object */;
@@ -1356,6 +1398,8 @@
 		7C5836631FD5ABE7001CC843 /* AvailabilityTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityTitleView.swift; sourceTree = "<group>"; };
 		7C5836651FD5ABFE001CC843 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		7C5DF2CB1FD7DEAD00B793B6 /* AvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityExtensions.swift; sourceTree = "<group>"; };
+		7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WireTransport.xcodeproj; path = "../wire-ios-transport/WireTransport.xcodeproj"; sourceTree = "<group>"; };
+		7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WireDataModel.xcodeproj; path = "../wire-ios-data-model/WireDataModel.xcodeproj"; sourceTree = "<group>"; };
 		7C6A69041FDFD80E007EBE41 /* AvailabilityLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityLabelTests.swift; sourceTree = "<group>"; };
 		7C72F03C200E0D03001231D3 /* PhotoPermissionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPermissionsController.swift; sourceTree = "<group>"; };
 		7C72F03E200E1000001231D3 /* MockPhotoPermissionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoPermissionsController.swift; sourceTree = "<group>"; };
@@ -3076,6 +3120,26 @@
 			path = Availability;
 			sourceTree = "<group>";
 		};
+		7C666BDB2010FFC600CD2D78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C666BE12010FFC800CD2D78 /* WireTransport.framework */,
+				7C666BE32010FFC800CD2D78 /* WireTransport-ios-tests.xctest */,
+				7C666BE52010FFC800CD2D78 /* WireTransport-tests-host.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C666BE72011071E00CD2D78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C666BED2011072000CD2D78 /* WireDataModel.framework */,
+				7C666BEF2011072000CD2D78 /* WireDataModelTests.xctest */,
+				7C666BF12011072000CD2D78 /* WireDataModelTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8286E48D7CC440448CBD8F48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -4122,7 +4186,9 @@
 		8F42C52F199244A700288E4D = {
 			isa = PBXGroup;
 			children = (
+				7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */,
 				87501FB21D40D6490056C042 /* ComponentsVersions.plist */,
+				7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */,
 				87C8D7FB1BA8261C00B0530B /* Entitlements-Dev.entitlements */,
 				87C8D7FC1BA8261C00B0530B /* Entitlements-Prod.entitlements */,
 				8FC85543199246EF0008B66B /* ConfigurationSets */,
@@ -5599,6 +5665,16 @@
 			mainGroup = 8F42C52F199244A700288E4D;
 			productRefGroup = 8F42C539199244A700288E4D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C666BE72011071E00CD2D78 /* Products */;
+					ProjectRef = 7C666BE62011071E00CD2D78 /* WireDataModel.xcodeproj */;
+				},
+				{
+					ProductGroup = 7C666BDB2010FFC600CD2D78 /* Products */;
+					ProjectRef = 7C666BDA2010FFC600CD2D78 /* WireTransport.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8F42C537199244A700288E4D /* Wire-iOS */,
@@ -5610,6 +5686,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7C666BE12010FFC800CD2D78 /* WireTransport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WireTransport.framework;
+			remoteRef = 7C666BE02010FFC800CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C666BE32010FFC800CD2D78 /* WireTransport-ios-tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "WireTransport-ios-tests.xctest";
+			remoteRef = 7C666BE22010FFC800CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C666BE52010FFC800CD2D78 /* WireTransport-tests-host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "WireTransport-tests-host.app";
+			remoteRef = 7C666BE42010FFC800CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C666BED2011072000CD2D78 /* WireDataModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WireDataModel.framework;
+			remoteRef = 7C666BEC2011072000CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C666BEF2011072000CD2D78 /* WireDataModelTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WireDataModelTests.xctest;
+			remoteRef = 7C666BEE2011072000CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C666BF12011072000CD2D78 /* WireDataModelTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WireDataModelTestHost.app;
+			remoteRef = 7C666BF02011072000CD2D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		168A16A71D9597C2005CFA6C /* Resources */ = {
@@ -5921,7 +6042,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireSystem.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireUtilities.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WireTransport.framework",
+				"$(BUILT_PRODUCTS_DIR)/WireTransport.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireImages.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireCryptobox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireProtos.framework",
@@ -5932,7 +6053,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/TTTAttributedLabel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/libPhoneNumberiOS.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WireDataModel.framework",
+				"$(BUILT_PRODUCTS_DIR)/WireDataModel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ZipArchive.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireLinkPreview.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Ono.framework",
